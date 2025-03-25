@@ -34,6 +34,6 @@ int binarySearch(int * arr,int low,int high,int element) {
 int main() 
 {
     int arr[] = {5,7,10,11,12,14,17,23,26,31,46,102};
-    printf("%d",binarySearch(arr,0,12,23));
+    printf("%d",binarySearch(arr,0,sizeof(arr)/sizeof(int),23));
     return 0;
 }
