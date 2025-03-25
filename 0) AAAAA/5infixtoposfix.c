@@ -8,10 +8,7 @@ struct Node {
 };
 
 int isEmpty(struct Node * top) {
-    if(top == NULL) {
-        return 1;
-    }
-    return 0;
+    return top == NULL ? 1 : 0;
 }
 
 void push(struct Node ** top,char data) {
