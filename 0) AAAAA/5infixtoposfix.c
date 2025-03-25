@@ -8,7 +8,7 @@ struct Node {
 };
 
 int isEmpty(struct Node * top) {
-    return top == NULL ? 1 : 0;
+    return top == NULL ? 1 : 0;  // Turnary Operator work in C too.
 }
 
 void push(struct Node ** top,char data) {
