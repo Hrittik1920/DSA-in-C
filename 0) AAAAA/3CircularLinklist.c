@@ -40,13 +40,13 @@ int main()
     scanf("%d",&n);
     struct Node *s[n];
     for(int i=0;i<n;i++)
-    s[i]=(struct Node*)malloc(sizeof(struct Node));
+        s[i]=(struct Node*)malloc(sizeof(struct Node));
     for(int i=0;i<n;i++)
     {
         scanf("%d",&s[i]->data);
         s[i]->next=s[i+1];
         if(i==n-1)
-        s[i]->next=s[0];
+            s[i]->next=s[0];
     }
 
     TraverseCircularLinklist(s[0]);
